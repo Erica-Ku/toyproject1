@@ -1,0 +1,4 @@
+- **CrudRepository**와 **JpaRepository**
+    - Spring Data JPA에서 제공하는 인터페이스로, 데이터베이스와 연동하는 CRUD(Create, Read, Update, Delete) 기능을 자동으로 구현함.
+    - CrudRepository는 JpaRepository의 상위 인터페이스이며, JPA에서 제공하는 EntityManager를 이용하여 데이터를 관리함. 반면에 JpaRepository는 EntityManager를 상속하여 JpaRepository에서 제공하는 기능을 추가로 제공함. 예를 들면, JpaRepository는 Pagable 인터페이스를 상속하므로 페이징 기능을 제공함.
+    - JpaRepository는 CrudRepository보다 더 많은 기능을 제공하며, 특히 대량의 데이터를 다룰 때 유용한 페이징 기능을 제공함. 하지만 JpaRepository가 제공하는 기능이 많기 때문에 더 많은 자원을 소비하게 되는 점이 단점으로 작용할 수 있음. 따라서 프로젝트의 크기나 요구사항에 따라 적절한 인터페이스를 선택하는 것이 중요함.
